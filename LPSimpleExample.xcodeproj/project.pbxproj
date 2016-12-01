@@ -32,10 +32,27 @@
 		F5E2D1BF18C7600400A0D9B6 /* LPFourthViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5E2D1B818C7600400A0D9B6 /* LPFourthViewController~ipad.xib */; };
 		F5E2D1C018C7600400A0D9B6 /* LPSecondViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5E2D1BA18C7600400A0D9B6 /* LPSecondViewController~ipad.xib */; };
 		F5E2D1C118C7600400A0D9B6 /* LPThirdViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5E2D1BC18C7600400A0D9B6 /* LPThirdViewController~ipad.xib */; };
+		F84375C51DC08E1B00241026 /* XCTest.xctest in Sources */ = {isa = PBXBuildFile; fileRef = F5CF88341BD8FC880062882A /* XCTest.xctest */; };
+		F8A94E7D1D9A99080073BE4E /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = F8A94E7C1D9A99080073BE4E /* Gemfile */; };
+		F8F439321DBA0947003BA503 /* LPSimpleExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F439311DBA0947003BA503 /* LPSimpleExampleUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F5CF88391BD8FC880062882A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B137ADC9143F6EBF007184CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B137ADD1143F6EBF007184CB;
+			remoteInfo = LPSimpleExample;
+		};
+		F84375C31DC08D2100241026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B137ADC9143F6EBF007184CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5CF88331BD8FC880062882A;
+			remoteInfo = XCTest;
+		};
+		F8F439341DBA0947003BA503 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B137ADC9143F6EBF007184CB /* Project object */;
 			proxyType = 1;
@@ -79,6 +96,11 @@
 		F5E2D1B918C7600400A0D9B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/LPFourthViewController~ipad.xib"; sourceTree = "<group>"; };
 		F5E2D1BB18C7600400A0D9B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/LPSecondViewController~ipad.xib"; sourceTree = "<group>"; };
 		F5E2D1BD18C7600400A0D9B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/LPThirdViewController~ipad.xib"; sourceTree = "<group>"; };
+		F890419B1DA520070005FF3C /* Applause.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Applause.framework; path = ../../Downloads/Applause.framework; sourceTree = "<group>"; };
+		F8A94E7C1D9A99080073BE4E /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		F8F4392F1DBA0947003BA503 /* LPSimpleExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LPSimpleExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8F439311DBA0947003BA503 /* LPSimpleExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPSimpleExampleUITests.swift; sourceTree = "<group>"; };
+		F8F439331DBA0947003BA503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ba062f8db2cc162e28bbeebc /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -104,14 +126,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8F4392C1DBA0947003BA503 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		B137ADC7143F6EBF007184CB = {
 			isa = PBXGroup;
 			children = (
+				F8A94E7C1D9A99080073BE4E /* Gemfile */,
 				B137ADDC143F6EBF007184CB /* LPSimpleExample */,
 				F5CF88351BD8FC880062882A /* XCTest */,
+				F8F439301DBA0947003BA503 /* LPSimpleExampleUITests */,
 				B137ADD5143F6EBF007184CB /* Frameworks */,
 				B137ADD3143F6EBF007184CB /* Products */,
 			);
@@ -123,6 +154,7 @@
 			children = (
 				B137ADD2143F6EBF007184CB /* LPSimpleExample.app */,
 				F5CF88341BD8FC880062882A /* XCTest.xctest */,
+				F8F4392F1DBA0947003BA503 /* LPSimpleExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +162,7 @@
 		B137ADD5143F6EBF007184CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F890419B1DA520070005FF3C /* Applause.framework */,
 				B126C4C01A0D20EB005338E8 /* CoreLocation.framework */,
 				B1FBB9F819CFDF2100EE03CE /* Security.framework */,
 				B137AE01143F7109007184CB /* MapKit.framework */,
@@ -213,6 +246,15 @@
 			name = iPad;
 			sourceTree = "<group>";
 		};
+		F8F439301DBA0947003BA503 /* LPSimpleExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F8F439311DBA0947003BA503 /* LPSimpleExampleUITests.swift */,
+				F8F439331DBA0947003BA503 /* Info.plist */,
+			);
+			path = LPSimpleExampleUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,6 +294,25 @@
 			productReference = F5CF88341BD8FC880062882A /* XCTest.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F8F4392E1DBA0947003BA503 /* LPSimpleExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8F439381DBA0947003BA503 /* Build configuration list for PBXNativeTarget "LPSimpleExampleUITests" */;
+			buildPhases = (
+				F8F4392B1DBA0947003BA503 /* Sources */,
+				F8F4392C1DBA0947003BA503 /* Frameworks */,
+				F8F4392D1DBA0947003BA503 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8F439351DBA0947003BA503 /* PBXTargetDependency */,
+				F84375C41DC08D2100241026 /* PBXTargetDependency */,
+			);
+			name = LPSimpleExampleUITests;
+			productName = LPSimpleExampleUITests;
+			productReference = F8F4392F1DBA0947003BA503 /* LPSimpleExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -259,11 +320,17 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = LP;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Calabash;
 				TargetAttributes = {
 					F5CF88331BD8FC880062882A = {
 						CreatedOnToolsVersion = 7.1;
+						TestTargetID = B137ADD1143F6EBF007184CB;
+					};
+					F8F4392E1DBA0947003BA503 = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = B137ADD1143F6EBF007184CB;
 					};
 				};
@@ -282,6 +349,7 @@
 			targets = (
 				B137ADD1143F6EBF007184CB /* LPSimpleExample */,
 				F5CF88331BD8FC880062882A /* XCTest */,
+				F8F4392E1DBA0947003BA503 /* LPSimpleExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -291,6 +359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8A94E7D1D9A99080073BE4E /* Gemfile in Resources */,
 				F5E2D1B418C75F2200A0D9B6 /* LPThirdViewController.xib in Resources */,
 				F5CF882F1BD8FABC0062882A /* page.html in Resources */,
 				B137ADE1143F6EBF007184CB /* InfoPlist.strings in Resources */,
@@ -306,6 +375,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F5CF88321BD8FC880062882A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8F4392D1DBA0947003BA503 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -354,6 +430,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8F4392B1DBA0947003BA503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F439321DBA0947003BA503 /* LPSimpleExampleUITests.swift in Sources */,
+				F84375C51DC08E1B00241026 /* XCTest.xctest in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -361,6 +446,16 @@
 			isa = PBXTargetDependency;
 			target = B137ADD1143F6EBF007184CB /* LPSimpleExample */;
 			targetProxy = F5CF88391BD8FC880062882A /* PBXContainerItemProxy */;
+		};
+		F84375C41DC08D2100241026 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5CF88331BD8FC880062882A /* XCTest */;
+			targetProxy = F84375C31DC08D2100241026 /* PBXContainerItemProxy */;
+		};
+		F8F439351DBA0947003BA503 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B137ADD1143F6EBF007184CB /* LPSimpleExample */;
+			targetProxy = F8F439341DBA0947003BA503 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -526,15 +621,25 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LPSimpleExample/LPSimpleExample-Prefix.pch";
 				INFOPLIST_FILE = "LPSimpleExample/LPSimpleExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = NO;
+				"OTHER_LDFLAGS[sdk=iphoneos*]" = (
+					"-ObjC",
+					"-force_load",
+					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
+					"-framework",
+					CFNetwork,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = sh.calaba.LPSimpleExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -555,6 +660,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sh.calaba.LPSimpleExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -579,6 +685,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = sh.calab.XCTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LPSimpleExample.app/LPSimpleExample";
 			};
 			name = Debug;
@@ -604,7 +711,182 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = sh.calab.XCTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LPSimpleExample.app/LPSimpleExample";
+			};
+			name = Release;
+		};
+		F8DF53B31DBF55520020AA8F /* Calabash */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Calabash;
+		};
+		F8DF53B41DBF55520020AA8F /* Calabash */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LPSimpleExample/LPSimpleExample-Prefix.pch";
+				INFOPLIST_FILE = "LPSimpleExample/LPSimpleExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
+					"-framework",
+					CFNetwork,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sh.calaba.LPSimpleExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Calabash;
+		};
+		F8DF53B51DBF55520020AA8F /* Calabash */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = XCTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = sh.calab.XCTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LPSimpleExample.app/LPSimpleExample";
+			};
+			name = Calabash;
+		};
+		F8DF53B61DBF55520020AA8F /* Calabash */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = LPSimpleExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.LPSimpleExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
+				TEST_TARGET_NAME = LPSimpleExample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Calabash;
+		};
+		F8F439361DBA0947003BA503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = LPSimpleExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.LPSimpleExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
+				TEST_TARGET_NAME = LPSimpleExample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F8F439371DBA0947003BA503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = LPSimpleExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.LPSimpleExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
+				TEST_TARGET_NAME = LPSimpleExample;
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -615,6 +897,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B137ADFC143F6EBF007184CB /* Debug */,
+				F8DF53B31DBF55520020AA8F /* Calabash */,
 				B137ADFD143F6EBF007184CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -624,6 +907,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B137ADFF143F6EBF007184CB /* Debug */,
+				F8DF53B41DBF55520020AA8F /* Calabash */,
 				B137AE00143F6EBF007184CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -633,9 +917,21 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F5CF883C1BD8FC880062882A /* Debug */,
+				F8DF53B51DBF55520020AA8F /* Calabash */,
 				F5CF883D1BD8FC880062882A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8F439381DBA0947003BA503 /* Build configuration list for PBXNativeTarget "LPSimpleExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8F439361DBA0947003BA503 /* Debug */,
+				F8DF53B61DBF55520020AA8F /* Calabash */,
+				F8F439371DBA0947003BA503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

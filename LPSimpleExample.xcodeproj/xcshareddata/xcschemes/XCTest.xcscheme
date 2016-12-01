@@ -52,6 +52,16 @@
                ReferencedContainer = "container:LPSimpleExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F8F4392E1DBA0947003BA503"
+               BuildableName = "LPSimpleExampleUITests.xctest"
+               BlueprintName = "LPSimpleExampleUITests"
+               ReferencedContainer = "container:LPSimpleExample.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
@@ -93,6 +103,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F5CF88331BD8FC880062882A"
+            BuildableName = "XCTest.xctest"
+            BlueprintName = "XCTest"
+            ReferencedContainer = "container:LPSimpleExample.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
