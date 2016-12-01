@@ -7,7 +7,7 @@ xcrun simctl erase all
 #this is required after a system restart
 #so the simulator knows to run iPad rather than iPhone apps
 echo "Opening iphone simulator"
-open "open -a "Simulator" --args -CurrentDeviceUDID EBCEBBA3-C329-45E5-B991-28541FF1540A"
+open "open -a "Simulator"
 sleep 10
 killall 'iPhone Simulator'
 echo "iphone simulator killed"
