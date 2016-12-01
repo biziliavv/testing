@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #reset the content and settings of the iphone sim
-rm -r ~/Library/Application\ Support/iPhone\ Simulator/
+xcrun simctl erase all
 
 #open the iphonesimulator and kill it
 #this is required after a system restart
