@@ -7,7 +7,7 @@ rm -r ~/Library/Application\ Support/iPhone\ Simulator/
 #this is required after a system restart
 #so the simulator knows to run iPad rather than iPhone apps
 echo "Opening iphone simulator"
-open "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone Simulator.app"
+open "open -a "Simulator" --args -CurrentDeviceUDID EBCEBBA3-C329-45E5-B991-28541FF1540A"
 sleep 10
 killall 'iPhone Simulator'
 echo "iphone simulator killed"
@@ -17,11 +17,3 @@ echo "Removing previous build folder"
 rm -r ${WORKSPACE}/build
 mkdir ${WORKSPACE}/build
 
-#Start sinatra server in the background
-ruby TestProject/server.rb &
-
-#get the PID of the process
-PID=$!
-
-#save PID to file
-echo $PID > ${WORKSPACE}/sinatra.pid
