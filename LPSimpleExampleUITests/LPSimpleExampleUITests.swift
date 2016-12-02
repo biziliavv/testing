@@ -73,7 +73,7 @@ class LPSimpleExampleUITests: XCTestCase {
         let app = XCUIApplication()
         app.tabBars.buttons["Fourth"].tap()
         app.buttons["Toggle the Secret"].tap()
-        app.staticTexts["An internal link. Touch!"].tap()
+        app.staticTexts["An internal link Touch!"].tap()
         
     }
 }
