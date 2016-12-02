@@ -68,7 +68,14 @@ class LPSimpleExampleUITests: XCTestCase {
         app.buttons["br"].tap()
         app.buttons["BAL:42"].tap()
     }
-
+    func testLastScreen(){
+        
+        let app = XCUIApplication()
+        app.tabBars.buttons["Fourth"].tap()
+        app.buttons["Toggle the Secret"].tap()
+        app.staticTexts["An internal link. Touch!"].tap()
+        
+    }
 }
     
 
