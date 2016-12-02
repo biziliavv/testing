@@ -28,21 +28,6 @@ class LPSimpleExampleUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        
-        let app = XCUIApplication()
-        app.switches["switch"].tap()
-        
-        let tabBarsQuery = XCUIApplication().tabBars
-        tabBarsQuery.buttons["Second"].tap()
-        tabBarsQuery.buttons["Fourth"].tap()
-        
-        
-        
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
     func testRemove() {
         
         let app = XCUIApplication()
