@@ -66,6 +66,7 @@ class LPSimpleExampleUITests: XCTestCase {
         app.buttons["tr"].tap()
         app.buttons["bl"].tap()
         app.buttons["br"].tap()
+        sleep(2)
         app.buttons["BAL:42"].tap()
     }
     func testLastScreen(){
