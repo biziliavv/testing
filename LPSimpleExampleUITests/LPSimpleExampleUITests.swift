@@ -74,6 +74,7 @@ class LPSimpleExampleUITests: XCTestCase {
         app.tabBars.buttons["Fourth"].tap()
         sleep(8)
         app.buttons["Toggle the Secret"].tap()
+        sleep(2)
         app.staticTexts["An internal link. Touch!"].tap()
         
     }
